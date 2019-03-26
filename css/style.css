@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+header{
+	padding: 0 16px;
+	height: 56px;
+	border-bottom: 1px solid #f0f0f0;
+	display: flex;
+	    justify-content: space-between;
+	background: rgb(252, 252, 252);
+}
+#left-header{
+	display: flex;
+}
+#main-nav{
+	background: transparent;
+	border: 0;
+	font-size:24px;
+	margin-right: 16px;
+}
+#logo{
+	max-height: 100%;
+}
+#search-form-container{
+	position: relative;
+	padding-right: 64px;
+}
+#search-form-container input[type="text"]{
+	width: 562px;
+}
+#search-form-container input[type="text"],
+#search-form-container button{
+	height: 32px;
+	margin-top: 12px;
+}
+#search-form-container button{
+	width: 65px;
+	background: #f0f0f0;
+	border: 1px solid #d3d3d3;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#options-container{
+	display: flex;
+}
+#cam,
+#grid-icon,
+#comments-icon,
+#bill-icon{
+	width: 24px;
+	height: 24px;
+	background: transparent;
+	border: 0;
+	padding: 0;
+	margin-top: 16px;
+}
+#grid-icon{
+	background: url(../imgs/icons.png);
+	background-position: 5px 5px;
+	background-repeat: no-repeat;
+}
+#comments-icon,
+#bill-icon{
+    font-size: 18px;
+
+}
