@@ -44,6 +44,7 @@ header{
 }
 #search-form-container input[type="text"]{
 	width: 562px;
+  padding: 5px;
 }
 #search-form-container input[type="text"],
 #search-form-container button{
@@ -57,13 +58,19 @@ header{
 	position: absolute;
 	top: 0;
 	right: 0;
+  color: rgb(96, 96, 96);
 }
 #options-container{
 	display: flex;
 }
+#options-container button{
+	margin-left: 22px;
+  color: rgb(96, 96, 96);
+}
 #cam,
 #grid-icon,
 #comments-icon,
+#user-icon,
 #bill-icon{
 	width: 24px;
 	height: 24px;
@@ -71,6 +78,7 @@ header{
 	border: 0;
 	padding: 0;
 	margin-top: 16px;
+  cursor: pointer;
 }
 #grid-icon{
 	background: url(../imgs/icons.png);
@@ -81,6 +89,12 @@ header{
 #bill-icon{
     font-size: 18px;
 
+}
+
+#user-icon {
+  background-color: red;
+  color: #fff!important;
+  border-radius: 50%;
 }
 
 .container {
@@ -171,8 +185,13 @@ aside {
   border-bottom: 1px solid #ddd;
 }
 
+#autoplay {
+  float: right;
+}
+
 .next-video-item {
   margin-top: 12px;
+  position: relative;
 }
 
 .next-video-title {
@@ -206,7 +225,7 @@ aside {
 .publish-date-container{
     display: flex;
     flex-direction: column;
-    
+
     height: 52px;
     justify-content: center;
 }
@@ -221,7 +240,7 @@ h2.channel-name {
 }
 .logo-anchor{
 	display: block;
-	
+
 	margin-right: 16px;
 }
 .sub-button{
@@ -260,4 +279,30 @@ a.category:hover{
 a.show-less{
 	color: rgb(96, 96, 96);
 	text-transform: uppercase;
+}
+
+.next-video-item:hover .more-options,
+.next-video-item:hover .see-later {
+  display: block;
+}
+
+.more-options {
+  color: rgb(96, 96, 96);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  display: none;
+  cursor: pointer;
+}
+
+.see-later {
+  color: rgb(96, 96, 96);
+  background-color: rgb(10, 10, 10);
+  padding: 3px 5px;
+  border-radius: 3px;
+  position: absolute;
+  top: 6px;
+  right: 162px;
+  display: none;
+  cursor: pointer;
 }

@@ -7,9 +7,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" href="imgs/favicon.png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -20,11 +18,6 @@
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
   <header>
   	<div id="left-header">
   	<button id="main-nav">
@@ -50,9 +43,9 @@
   	<div id="options-container">
 
   		<button id="cam">
-  			<yt-icon class="style-scope ytd-topbar-menu-button-renderer"><svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
+  			<svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon">
         <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z" class="style-scope yt-icon"></path>
-      </g></svg></yt-icon>
+      </g></svg>
   		</button>
 
       	<button id="grid-icon">
@@ -65,8 +58,8 @@
       	<button id="bill-icon">
       		<i class="far fa-bell"></i>
       	</button>
-      	<button id="bill-icon">
-      		<i class="far fa-bell"></i>
+      	<button id="user-icon">
+      		<span>A</span>
       	</button>
 
   	</div>
@@ -127,11 +120,12 @@
       <div id="next-videos">
         <div class="next">
           <span>Up next</span>
-          <span>AUTOPLAY</span>
+          <span id="autoplay">AUTOPLAY</span>
           <div class="next-video-item">
             <div class="left">
               <a href="#">
                 <img class="next-video-thumbail" src="https://i.ytimg.com/vi/yoW2jHoVdug/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDc74dU_BQD5f27CkFi1Ca-_ii7wg" alt="">
+                <span class="see-later"><i class="fas fa-clock"></i></span>
               </a>
             </div>
             <div class="right">
@@ -149,6 +143,7 @@
                 </div>
               </a>
             </div>
+            <span class="more-options"><i class="fas fa-ellipsis-v"></i></span>
           </div>
         </div>
 
@@ -157,6 +152,7 @@
             <div class="left">
               <a href="#">
                 <img class="next-video-thumbail" src="https://i.ytimg.com/vi/yoW2jHoVdug/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDc74dU_BQD5f27CkFi1Ca-_ii7wg" alt="">
+                <span class="see-later"><i class="fas fa-clock"></i></span>
               </a>
             </div>
             <div class="right">
@@ -174,13 +170,13 @@
                 </div>
               </a>
             </div>
+            <span class="more-options"><i class="fas fa-ellipsis-v"></i></span>
           </div>
-        </div>
-        <div class="next-video-list">
           <div class="next-video-item">
             <div class="left">
               <a href="#">
                 <img class="next-video-thumbail" src="https://i.ytimg.com/vi/yoW2jHoVdug/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDc74dU_BQD5f27CkFi1Ca-_ii7wg" alt="">
+                <span class="see-later"><i class="fas fa-clock"></i></span>
               </a>
             </div>
             <div class="right">
@@ -198,13 +194,13 @@
                 </div>
               </a>
             </div>
+            <span class="more-options"><i class="fas fa-ellipsis-v"></i></span>
           </div>
-        </div>
-        <div class="next-video-list">
           <div class="next-video-item">
             <div class="left">
               <a href="#">
                 <img class="next-video-thumbail" src="https://i.ytimg.com/vi/yoW2jHoVdug/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDc74dU_BQD5f27CkFi1Ca-_ii7wg" alt="">
+                <span class="see-later"><i class="fas fa-clock"></i></span>
               </a>
             </div>
             <div class="right">
@@ -222,6 +218,103 @@
                 </div>
               </a>
             </div>
+            <span class="more-options"><i class="fas fa-ellipsis-v"></i></span>
+          </div>
+          <div class="next-video-item">
+            <div class="left">
+              <a href="#">
+                <img class="next-video-thumbail" src="https://i.ytimg.com/vi/yoW2jHoVdug/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDc74dU_BQD5f27CkFi1Ca-_ii7wg" alt="">
+                <span class="see-later"><i class="fas fa-clock"></i></span>
+              </a>
+            </div>
+            <div class="right">
+              <a href="#">
+                <div class="">
+                  <div class="">
+                    <span class="next-video-title">How To Convert pdf to word without software</span>
+                  </div>
+                  <div class="next-video-author">
+                    <span>karim hamdadi</span>
+                  </div>
+                  <div class="next-video-stat">
+                    <span>7,2 M views</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <span class="more-options"><i class="fas fa-ellipsis-v"></i></span>
+          </div>
+          <div class="next-video-item">
+            <div class="left">
+              <a href="#">
+                <img class="next-video-thumbail" src="https://i.ytimg.com/vi/yoW2jHoVdug/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDc74dU_BQD5f27CkFi1Ca-_ii7wg" alt="">
+                <span class="see-later"><i class="fas fa-clock"></i></span>
+              </a>
+            </div>
+            <div class="right">
+              <a href="#">
+                <div class="">
+                  <div class="">
+                    <span class="next-video-title">How To Convert pdf to word without software</span>
+                  </div>
+                  <div class="next-video-author">
+                    <span>karim hamdadi</span>
+                  </div>
+                  <div class="next-video-stat">
+                    <span>7,2 M views</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <span class="more-options"><i class="fas fa-ellipsis-v"></i></span>
+          </div>
+          <div class="next-video-item">
+            <div class="left">
+              <a href="#">
+                <img class="next-video-thumbail" src="https://i.ytimg.com/vi/yoW2jHoVdug/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDc74dU_BQD5f27CkFi1Ca-_ii7wg" alt="">
+                <span class="see-later"><i class="fas fa-clock"></i></span>
+              </a>
+            </div>
+            <div class="right">
+              <a href="#">
+                <div class="">
+                  <div class="">
+                    <span class="next-video-title">How To Convert pdf to word without software</span>
+                  </div>
+                  <div class="next-video-author">
+                    <span>karim hamdadi</span>
+                  </div>
+                  <div class="next-video-stat">
+                    <span>7,2 M views</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <span class="more-options"><i class="fas fa-ellipsis-v"></i></span>
+          </div>
+          <div class="next-video-item">
+            <div class="left">
+              <a href="#">
+                <img class="next-video-thumbail" src="https://i.ytimg.com/vi/yoW2jHoVdug/hqdefault.jpg?sqp=-oaymwEYCKgBEF5IVfKriqkDCwgBFQAAiEIYAXAB&rs=AOn4CLDc74dU_BQD5f27CkFi1Ca-_ii7wg" alt="">
+                <span class="see-later"><i class="fas fa-clock"></i></span>
+              </a>
+            </div>
+            <div class="right">
+              <a href="#">
+                <div class="">
+                  <div class="">
+                    <span class="next-video-title">How To Convert pdf to word without software</span>
+                  </div>
+                  <div class="next-video-author">
+                    <span>karim hamdadi</span>
+                  </div>
+                  <div class="next-video-stat">
+                    <span>7,2 M views</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <span class="more-options"><i class="fas fa-ellipsis-v"></i></span>
           </div>
         </div>
       </div>
