@@ -72,3 +72,22 @@ header{
     font-size: 18px;
 
 }
+
+.container {
+  padding: 30px;
+}
+
+.video-title {
+  font-size: 22px;
+  font-weight: normal;
+  padding: 2px 0;
+}
+
+main {
+  display: inline-block;
+  width: 70%
+}
+aside {
+  display: inline-block;
+  width: 20%;
+}
